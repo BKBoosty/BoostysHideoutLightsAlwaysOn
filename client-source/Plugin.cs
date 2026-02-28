@@ -5,7 +5,7 @@ using SPT.Reflection.Patching;
 
 namespace BoostysHideoutLightsAlwaysOn.Client;
 
-[BepInPlugin("com.boosty.hideoutlightsalwayson.client", "Boosty's Hideout Lights Always On (Client)", "1.0.0")]
+[BepInPlugin("com.boosty.hideoutlightsalwayson", "Boosty-HideoutLightsAlwaysOn", "1.0.0")]
 public class Plugin : BaseUnityPlugin
 {
     internal static ManualLogSource Log = null!;

@@ -7,7 +7,7 @@ public record ModMetadata : AbstractModMetadata
 {
     public override string ModGuid { get; init; } = "com.boosty.hideoutlightsalwayson";
 
-    public override string Name { get; init; } = "Boosty's Hideout Lights Always On";
+    public override string Name { get; init; } = "BoostysHideoutLightsAlwaysOn";
 
     public override string Author { get; init; } = "Boosty";
 

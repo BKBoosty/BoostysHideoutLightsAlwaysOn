@@ -3,65 +3,43 @@
 Version: `1.0.0`  
 SPT target: `~4.0.0`
 
-Server + client package for SPT 4.0.x.
+## What This Mod Does
 
-## Purpose
-
-- Keeps hideout lights usable without turning on the generator.
-- Keeps normal illumination unlock/progression behavior.
-- Keeps manual light mode selection behavior.
-
-## Dependencies
-
-- No third-party mod dependencies.
-- Requires standard SPT 4.0.x runtime:
-  - Server side: SPT server assemblies.
-  - Client side: BepInEx + Harmony + `spt-reflection` (included with SPT installs).
-
-## Standalone Use
-
-- Works as a standalone mod package on any SPT 4.0.x install.
-- Does not require Fika. If using Fika, each player still needs the client DLL.
-
-## Required Pieces
-
-- Server: `SPT/user/mods/boostys-hideout-lights-always-on/BoostysHideoutLightsAlwaysOn.dll`
-- Client install target (every player): `BepInEx/plugins/BoostysHideoutLightsAlwaysOn.Client.dll`
-
-## Source Code Links (Required for DLLs)
-
-- `BoostysHideoutLightsAlwaysOn.dll` source:
-  `https://github.com/BKBoosty/BoostysHideoutLightsAlwaysOn/tree/main/source`
-- `BoostysHideoutLightsAlwaysOn.Client.dll` source:
-  `https://github.com/BKBoosty/BoostysHideoutLightsAlwaysOn/tree/main/client-source`
-
-Before distributing binaries, ensure the linked repository is publicly accessible.
+- Lets hideout illumination work without generator fuel.
+- Keeps normal hideout progression (you still need Illumination built/upgraded).
+- Keeps your normal light mode choice in hideout.
 
 ## Install
 
-1. Place the server mod folder in `SPT/user/mods/` on the server host.
-2. Place `BoostysHideoutLightsAlwaysOn.Client.dll` in `BepInEx/plugins/` on each client.
-3. Restart server and game.
+1. Close SPT server, launcher, and game.
+2. Extract `BoostysHideoutLightsAlwaysOn-1.0.0.zip` into your SPT folder.
+3. Confirm client file exists:
+   `BepInEx/plugins/BoostysHideoutLightsAlwaysOn.Client.dll`
+4. Confirm server file exists:
+   `SPT/user/mods/boostys-hideout-lights-always-on/BoostysHideoutLightsAlwaysOn.dll`
+5. If your setup is single-root (no nested `SPT` folder), use:
+   `user/mods/boostys-hideout-lights-always-on/BoostysHideoutLightsAlwaysOn.dll`
+6. Restart server and game.
 
-## Verify
+## Fika Note
 
-- Server log contains:
+- The server mod must be installed on the host/server.
+- The client DLL must be installed on each player client.
+
+## Quick Check
+
+- Server startup log should contain:
   `[BoostysHideoutLightsAlwaysOn] Illumination no longer requires generator fuel.`
-- Client `BepInEx/LogOutput.log` contains:
+- Client `BepInEx/LogOutput.log` should contain:
   `Client patch enabled (light gating override).`
 
-## Build
+## Uninstall
 
-Server DLL:
+1. Remove `BepInEx/plugins/BoostysHideoutLightsAlwaysOn.Client.dll`
+2. Remove `SPT/user/mods/boostys-hideout-lights-always-on` (or `user/mods/...` on single-root setups)
+3. Restart server and game.
 
-```powershell
-cd source
-dotnet build -c Release -p:SptRoot=C:\Path\To\Your\SPT
-```
+## Source Code
 
-Client DLL:
-
-```powershell
-cd client-source
-dotnet build -c Release -p:SptRoot=C:\Path\To\Your\SPT
-```
+Public source (for both DLLs):  
+`https://github.com/BKBoosty/BoostysHideoutLightsAlwaysOn`
