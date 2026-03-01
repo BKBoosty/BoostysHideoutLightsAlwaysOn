@@ -43,3 +43,9 @@ SPT target: `~4.0.0`
 
 Public source (for both DLLs):  
 `https://github.com/BKBoosty/BoostysHideoutLightsAlwaysOn`
+
+## License
+
+This mod is licensed under `CC BY-NC 4.0` (Creative Commons Attribution-NonCommercial 4.0 International).
+
+Commercial use is not allowed without separate permission from the author.

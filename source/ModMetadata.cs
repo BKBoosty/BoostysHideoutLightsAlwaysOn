@@ -25,5 +25,5 @@ public record ModMetadata : AbstractModMetadata
 
     public override bool? IsBundleMod { get; init; } = false;
 
-    public override string License { get; init; } = "MIT";
+    public override string License { get; init; } = "CC BY-NC 4.0";
 }
