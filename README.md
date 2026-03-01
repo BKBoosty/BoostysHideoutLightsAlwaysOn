@@ -46,6 +46,7 @@ Public source (for both DLLs):
 
 ## License
 
-This mod is licensed under `CC BY-NC 4.0` (Creative Commons Attribution-NonCommercial 4.0 International).
+This mod is licensed under `CC BY-NC-SA 4.0` (Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International).
 
 Commercial use is not allowed without separate permission from the author.
+Modified versions must be shared under the same license.
