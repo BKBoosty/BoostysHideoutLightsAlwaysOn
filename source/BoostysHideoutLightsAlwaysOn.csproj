@@ -3,9 +3,9 @@
     <TargetFramework>net9.0</TargetFramework>
     <AssemblyName>BoostysHideoutLightsAlwaysOn</AssemblyName>
     <RootNamespace>BoostysHideoutLightsAlwaysOn</RootNamespace>
-    <Version>1.0.0</Version>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <FileVersion>1.0.0.0</FileVersion>
+    <Version>1.0.1</Version>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>

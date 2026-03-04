@@ -1,6 +1,6 @@
 # Boosty's Hideout Lights Always On
 
-Version: `1.0.0`  
+Version: `1.0.1`  
 SPT target: `~4.0.0`
 
 ## What This Mod Does
@@ -8,11 +8,20 @@ SPT target: `~4.0.0`
 - Lets hideout illumination work without generator fuel.
 - Keeps normal hideout progression (you still need Illumination built/upgraded).
 - Keeps your normal light mode choice in hideout.
+- Adds F12 configs:
+  - `EnableLightsAlwaysOn` (`true/false`)
+    - `true` = default behavior for this mod (lights-always-on override enabled)
+    - `false` = disable always-on forcing (mod does not override light power state)
+  - `MinimumIlluminationLevel` (`0-3`), to control the minimum Illumination level required before lights are forced on.
+    - `0` = default behavior (no level gating)
+    - `1` = only force on at Illumination level 1 or higher
+    - `2` = only force on at Illumination level 2 or higher
+    - `3` = only force on at Illumination level 3 or higher
 
 ## Install
 
 1. Close SPT server, launcher, and game.
-2. Extract `BoostysHideoutLightsAlwaysOn-1.0.0.zip` into your SPT folder.
+2. Extract `BoostysHideoutLightsAlwaysOn-1.0.1.zip` into your SPT folder.
 3. Confirm client file exists:
    `BepInEx/plugins/BoostysHideoutLightsAlwaysOn.Client.dll`
 4. Confirm server file exists:
